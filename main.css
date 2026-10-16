@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    color: #f8fafc;
+    background: radial-gradient(circle at top, #294b42, #101820 65%);
+    transition: background 0.4s, color 0.4s;
+}
+
+.card {
+    width: 100%;
+    max-width: 620px;
+    padding: 36px 26px;
+    border: 1px solid #ffffff26;
+    border-radius: 24px;
+    background: #ffffff0c;
+    box-shadow: 0 18px 55px #00000035;
+}
+
+.stickers {
+    font-size: 42px;
+    margin-bottom: 20px;
+    letter-spacing: 8px;
+}
+
+.eyebrow {
+    color: #86efac;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: clamp(24px, 5vw, 34px);
+    line-height: 1.8;
+    margin: 0 0 16px;
+}
+
+#message {
+    color: #d1fae5;
+    font-size: 18px;
+    line-height: 2;
+    margin: 0 0 28px;
+}
+
+#darkBtn {
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: bold;
+    color: #102018;
+    background: #86efac;
+    border: 0;
+    border-radius: 13px;
+    padding: 14px 28px;
+    cursor: pointer;
+    box-shadow: 0 7px 0 #3d9460;
+    transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+#darkBtn:hover {
+    background: #a7f3c0;
+    transform: translateY(-2px);
+    box-shadow: 0 9px 0 #3d9460;
+}
+
+#darkBtn:active {
+    transform: translateY(4px);
+    box-shadow: 0 3px 0 #3d9460;
+}
+
+.tiny-note {
+    margin: 28px 0 0;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+body.pranked {
+    background: #050505;
+    color: #ffffff;
+}
+
+body.pranked .card {
+    border-color: #ffffff18;
+    background: #111111;
+    box-shadow: none;
+}
+
+body.pranked .stickers {
+    font-size: 50px;
+}
+
+body.pranked #title {
+    font-size: clamp(30px, 6vw, 48px);
+    color: #facc15;
+}
+
+body.pranked #message {
+    color: #e5e7eb;
+    font-size: clamp(22px, 4vw, 30px);
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 28px 18px;
+    }
+
+    .stickers {
+        font-size: 34px;
+        letter-spacing: 4px;
+    }
+}
